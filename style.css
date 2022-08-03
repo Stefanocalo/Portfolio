@@ -9,6 +9,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 #navbar {
     min-height: 5.5rem;
     background-color: rgb(5, 88, 128);
@@ -20,9 +24,18 @@ html {
     position: fixed;
     top: 0;
 }
-
-.mobile_picture {
-    display: none;
+.scroll-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.scroll_picture {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 1px solid rgb(0,0,0);
+    opacity: 0;
+    transition: 0.4s 0.1s linear;
 }
 
 #hamburger_menu {
@@ -34,6 +47,7 @@ html {
     font-size: 1.4rem;
     opacity: 0;
     transition: 0.4s 0.1s linear;
+    margin: 0 1rem;
 }
 
 .bar {
@@ -69,7 +83,9 @@ html {
     margin-top: 8rem;
     padding-top: 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -84,9 +100,43 @@ html {
 
 .name {
     font-size: 3rem;
-    margin: 0 3rem;
+    margin: 1rem 0;
     transition: 0.4s;
 }
+
+article {
+    margin: 4rem 6rem;
+    text-align: justify-all;
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: rgb(5, 88, 128);
+    color: rgb(255,255,255);
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6rem;
+}
+
+footer span {
+    margin: 1rem 0;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Phone Media query */
 
 @media(max-width: 768px) {
     #hamburger_menu {
@@ -103,14 +153,8 @@ html {
         transition: 0.4s;
     }
 
-    .mobile_picture {
-        display: block;
-        height: 3rem;
-        width: 3rem;
-        border-radius: 50%;
-        border: 1px solid rgb(0,0,0);
-        opacity: 0;
-        transition: 0.4s 0.1s linear;
+    .scroll-menu {
+        flex-direction: row-reverse;
     }
 
     .nav_menu ul {
@@ -121,7 +165,6 @@ html {
         width: 100%;
         padding: 1.3rem 0;
     }
-
     .nav_item a {
         font-size: 1.3rem;
     }
@@ -135,14 +178,10 @@ html {
     }
 
     #hamburger_menu.active .bar:nth-child(1) {
-        transform: translateY(0.7rem) rotate(45deg) ;
+        transform: translateY(0.7rem) rotate(45deg);
     }
 
     #hamburger_menu.active .bar:nth-child(3) {
         transform: translateY(-0.7rem) rotate(-45deg) ;    }
 
-    #header {
-        flex-direction: column;
-        justify-content: center;
-    }
 }
