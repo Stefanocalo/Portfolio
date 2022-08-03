@@ -11,7 +11,7 @@ html {
 
 #navbar {
     min-height: 5.5rem;
-    background-color: orange;
+    background-color: rgb(5, 88, 128);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -21,15 +21,19 @@ html {
     top: 0;
 }
 
+.mobile_picture {
+    display: none;
+}
+
 #hamburger_menu {
     display: none;
 }
 
 .navbar_name {
     color: rgb(255,255,255);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     opacity: 0;
-    transition: 0.4s ease-out;
+    transition: 0.4s 0.1s linear;
 }
 
 .bar {
@@ -57,7 +61,7 @@ html {
 }
 
 .nav_item a:hover {
-    color: rgb(238, 19, 19);
+    color: rgb(5, 88, 128);
     background-color: rgb(255,255,255);
 }
 
@@ -67,7 +71,6 @@ html {
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: rgb(255,255,255);
 }
 
 #header .profile_picture {
@@ -96,8 +99,18 @@ html {
         top: 5.5rem;
         left: -100%;
         width: 100%;
-        background-color: orange;
+        background-color: rgb(5, 88, 128);
         transition: 0.4s;
+    }
+
+    .mobile_picture {
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        border: 1px solid rgb(0,0,0);
+        opacity: 0;
+        transition: 0.4s 0.1s linear;
     }
 
     .nav_menu ul {
@@ -107,6 +120,10 @@ html {
         gap: 3rem;
         width: 100%;
         padding: 1.3rem 0;
+    }
+
+    .nav_item a {
+        font-size: 1.3rem;
     }
 
     .nav_menu.active {

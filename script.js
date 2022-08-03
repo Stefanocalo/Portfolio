@@ -3,15 +3,17 @@
 window.onscroll = function () {scrollFunction()};
 
 const scrollFunction = function () {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
         document.querySelector('#header .profile_picture').style.height = '10rem';
         document.querySelector('#header .profile_picture').style.width = '10rem';
         document.querySelector('.navbar_name').style.opacity = '1'
+        document.querySelector('.mobile_picture').style.opacity = '1'
 
     } else {
         document.querySelector('#header .profile_picture').style.height = '20rem';
         document.querySelector('#header .profile_picture').style.width = '20rem';
         document.querySelector('.navbar_name').style.opacity = '0'
+        document.querySelector('.mobile_picture').style.opacity = '0'
     }
 }
 
