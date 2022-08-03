@@ -6,6 +6,7 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 #navbar {
@@ -21,7 +22,14 @@ html {
 }
 
 #hamburger_menu {
+    display: none;
+}
+
+.navbar_name {
+    color: rgb(255,255,255);
+    font-size: 1.2rem;
     opacity: 0;
+    transition: 0.4s ease-out;
 }
 
 .bar {
@@ -29,6 +37,7 @@ html {
     padding: 0.1rem 1rem;
     margin: 0.5rem;
     background-color: rgb(255,255,255);
+    transition: 0.4s;
 }
 
 .nav_menu ul{
@@ -58,6 +67,7 @@ html {
     display: flex;
     align-items: center;
     width: 100%;
+    background-color: rgb(255,255,255);
 }
 
 #header .profile_picture {
@@ -66,9 +76,56 @@ html {
     border: 3px solid rgb(0,0,0);
     border-radius: 50%;
     margin: 0 3rem;
+    transition: 0.4s;
 }
 
 .name {
     font-size: 3rem;
     margin: 0 3rem;
+    transition: 0.4s;
+}
+
+@media(max-width: 768px) {
+    #hamburger_menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav_menu {
+        position: fixed;
+        top: 5.5rem;
+        left: -100%;
+        width: 100%;
+        background-color: orange;
+        transition: 0.4s;
+    }
+
+    .nav_menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        width: 100%;
+        padding: 1.3rem 0;
+    }
+
+    .nav_menu.active {
+        left: 0;
+    }
+
+    #hamburger_menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger_menu.active .bar:nth-child(1) {
+        transform: translateY(0.7rem) rotate(45deg) ;
+    }
+
+    #hamburger_menu.active .bar:nth-child(3) {
+        transform: translateY(-0.7rem) rotate(-45deg) ;    }
+
+    #header {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
