@@ -35,3 +35,26 @@ document.querySelectorAll('.nav_item').forEach(n => {
         navMenu.classList.remove('active');
     })
 })
+
+
+
+let today = new Date();
+let dB = 7;
+let mB = 5;
+let yyyyB = 1992;
+let age = document.getElementById('age');
+let currentAge
+
+currentAge = today.getFullYear()-yyyyB
+if ((today.getMonth()-mB) < 0) {
+    currentAge -= 1
+} else if ((today.getMonth()-mB) === 0) {
+    if ((today.getDate()-dB) < 0) {
+        currentAge -= 1;
+    }
+}
+
+age.innerHTML = currentAge
+
+
+

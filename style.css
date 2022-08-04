@@ -11,7 +11,10 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
+
+/* Nav Bar Section */
 
 #navbar {
     min-height: 5.5rem;
@@ -38,6 +41,14 @@ body {
     transition: 0.4s 0.1s linear;
 }
 
+.nav_picture {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 1px solid rgb(0,0,0);
+    transition: 0.4s 0.1s linear;
+}
+
 #hamburger_menu {
     display: none;
 }
@@ -46,6 +57,13 @@ body {
     color: rgb(255,255,255);
     font-size: 1.4rem;
     opacity: 0;
+    transition: 0.4s 0.1s linear;
+    margin: 0 1rem;
+}
+
+.nav_name {
+    color: rgb(255,255,255);
+    font-size: 1.4rem;
     transition: 0.4s 0.1s linear;
     margin: 0 1rem;
 }
@@ -79,8 +97,10 @@ body {
     background-color: rgb(255,255,255);
 }
 
+/* Header Section */
+
 #header {
-    margin-top: 8rem;
+    margin-top: 5rem;
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -104,32 +124,84 @@ body {
     transition: 0.4s;
 }
 
-article {
-    margin: 4rem 6rem;
-    text-aligxn: justify-all;
+/* Main Section */
+
+main {
+    margin: 1rem 8rem;
+    text-align: justify;
+}
+
+.sub-titles {
+    font-size: 2.2rem;
+    padding: 2rem 0;
+}
+
+.skills_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.language_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#contacts {
+    padding-top: 5rem;
+}
+
+.contact_container {
+    padding: 1rem 0;
+}
+
+.contact_container span {
     font-size: 1.2rem;
 }
 
-h2 {
-    font-size: 1.7rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
+.contact_option {
+    padding: 2rem 0;
 }
 
 i {
     color: rgb(0,0,0);
-    margin: 2rem;
+    margin: 1rem;
+}
+
+.language {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem 0;
 }
 
 i:active {
     color: rgb(0,0,0);
 }
 
+.social_container i:hover {
+    color: rgba(3, 3, 3, 0.49)
+}
+
+.social_container i {
+    padding: 2rem 1rem 2rem 0;
+}
+
+.social_container {
+
+}
+
 .social_container {
     cursor: pointer;
-    width: 80%;
     display: flex;
+    justify-content: left;
 }
+
+/* Footer Section */
 
 footer {
     background-color: rgb(5, 88, 128);
@@ -137,7 +209,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 6rem;
+}
+
+
+.phrase {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+
 }
 
 .heart {
@@ -153,8 +231,9 @@ footer {
 
 @media(max-width: 768px) {
 
-    article {
-        margin: 1.2rem 2rem;
+
+    main {
+        margin: 2rem 2rem;
     }
 
     #hamburger_menu {

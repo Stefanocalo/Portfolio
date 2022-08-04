@@ -22,15 +22,15 @@
             <span class="bar"></span>
         </div>
         <div class="scroll-menu">
-            <img class="scroll_picture" src="Stefano_Calo_1.jpeg" alt="profile picture">
+            <a href="#"><img class="scroll_picture" src="Stefano_Calo_1.jpeg" alt="profile picture"></a>
             <span class="navbar_name">Stefano Calò</span>
         </div>
         <div class="nav_menu">
             <ul class>
                 <li class="nav_item"><a href="#about">About Me</a></li>
                 <li class="nav_item"><a href="#skills">Skills</a></li>
-                <li class="nav_item"><a href="#contacts">Contacts</a></li>
                 <li class="nav_item"><a href="#">Projects</a></li>
+                <li class="nav_item"><a href="./contact.html">Contacts</a></li>
             </ul>
         </div>
     </nav>
@@ -40,30 +40,38 @@
             <h1 class="name">Stefano Calò</h1>
         </div>
     </header>
-    <article id="about">
-        <h2 class="sub-titles">About Me</h2>
-        <p> Mi chiamo Stefano, ho 30 anni e lavoro da quando ne avevo 15. Coraggio e tenacia mi hanno permesso di trasferirmi a Londra all’età di 22 anni. Esperienza che è servita a interfacciarmi con molteplici culture, imparare la lingua e crescere professionalmente ricoprendo, dopo solo un anno, cariche manageriali nella ristorazione.</p>
-    </article>
-    <article>
-        <h2 id="skills">Skills</h2>
-
-        <i class="fa-brands fa-html5 fa-2xl"></i>
-        <i class="fa-brands fa-css3-alt fa-2xl"></i>
-        <i class="fa-brands fa-js fa-2xl"></i>
-
-
-    </article>
-    <article>
-        <h2 id="contacts">Contacts</h2>
-        <div class="social_container">
-            <a href="https://www.linkedin.com/in/stefano-calo0705/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-            <a href="https://github.com/Stefanocalo" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
-            <a href="mailto:stwefano.cal92@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-        </div>
-    </article>
+    <main>
+        <article id="about">
+            <h2 class="sub-titles">About Me</h2>
+            <p> Hi. I am Stefano, I am 30 <span id="age"></span> and I currently live in Milan.</p>
+            <p>I have worked my whole life in the hospitality industry in Italy and UK as General Manager and have grown both professionally and personally. </p>
+            <p>I, finally, decided that on my 30th birthday to start cultivating my passion and decided to start learning to code! </p>
+            <p>And here I am with my portfolio to show you some of the amazing projects I have created in the past months.</p>
+        </article>
+        <article id="skills">
+            <h2 class="sub-titles">Skills</h2>
+            <div class="skills_container">
+                <div class="language_container">
+                    <i class="fa-brands fa-html5 fa-2xl"></i>
+                    <span class="language">HTML5</span>
+                </div>
+                <div class="language_container">
+                    <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                    <span class="language">CSS3</span>
+                </div>
+                <div class="language_container">
+                    <i class="fa-brands fa-js fa-2xl"></i>
+                    <span class="language">JavaScript</span>
+                </div>
+            </div>
+        </article>
+    </main>
     <footer>
-        Made with <span class="heart">♥</span> in Milan
+        <div class="phrase">
+            Made with <span class="heart"> ♥ </span> in Milan
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
 </html>
+
