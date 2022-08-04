@@ -106,8 +106,8 @@ body {
 
 article {
     margin: 4rem 6rem;
-    text-align: justify-all;
-    font-size: 1.3rem;
+    text-aligxn: justify-all;
+    font-size: 1.2rem;
 }
 
 h2 {
@@ -116,29 +116,47 @@ h2 {
     margin-bottom: 2rem;
 }
 
+i {
+    color: rgb(0,0,0);
+    margin: 2rem;
+}
+
+i:active {
+    color: rgb(0,0,0);
+}
+
+.social_container {
+    cursor: pointer;
+    width: 80%;
+    display: flex;
+}
+
 footer {
     background-color: rgb(5, 88, 128);
     color: rgb(255,255,255);
-    height: 8rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 6rem;
 }
 
-footer span {
-    margin: 1rem 0;
+.heart {
+    color: rgb(243, 43, 43);
 }
 
-.contacts {
-    display: flex;
-    flex-direction: column;
-}
+
+
+
 
 
 /* Phone Media query */
 
 @media(max-width: 768px) {
+
+    article {
+        margin: 1.2rem 2rem;
+    }
+
     #hamburger_menu {
         display: block;
         cursor: pointer;
@@ -183,5 +201,10 @@ footer span {
 
     #hamburger_menu.active .bar:nth-child(3) {
         transform: translateY(-0.7rem) rotate(-45deg) ;    }
+
+    footer {
+        padding: 1rem 1rem;
+    }
+
 
 }
