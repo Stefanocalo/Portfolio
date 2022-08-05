@@ -336,7 +336,9 @@ footer {
 
     main {
         margin: 2rem 2rem;
-    }  hamburger_menu {
+    }
+
+    #hamburger_menu {
         display: block;
         cursor: pointer;
     }
