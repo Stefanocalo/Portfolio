@@ -56,5 +56,16 @@ if ((today.getMonth()-mB) < 0) {
 
 age.innerHTML = currentAge
 
+// Project preview hidden
 
+const hidden = document.querySelector('.hide');
+const plantleaf = document.querySelector('#plantleaf');
+const arrow = document.querySelector('.arrow');
+const preview = document.querySelector('.project_preview');
+
+plantleaf.addEventListener('click', () => {
+    hidden.classList.toggle('active');
+    arrow.classList.toggle('active');
+    preview.classList.toggle('active');
+})
 
