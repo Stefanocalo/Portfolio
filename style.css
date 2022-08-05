@@ -168,9 +168,21 @@ main {
     padding: 2rem 0;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+a:hover {
+    color: rgba(3, 3, 3, 0.49)
+}
+
 i {
     color: rgb(0,0,0);
     margin: 1rem;
+    transition: 0.3s ease-out;
 }
 
 .language {
