@@ -7,8 +7,6 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
-    transition: 0.4s linear;
-
 }
 
 body {
@@ -223,6 +221,8 @@ i:active {
     display: flex;
     align-items: center;
     width: 100%;
+    height: 10rem;
+    overflow: hidden;
 }
 
 .expand {
@@ -250,34 +250,53 @@ i:active {
 }
 
 .project_preview {
-    width: 95%;
-    height: 0;
+    width: 100%;
+    height: auto;
     border: 1px solid rgb(0,0,0);
     border-radius: 35px;
     margin: 2rem 0;
-    transition: 0.4s;
-}
-
-.project_preview:hover {
-    width: 100%;
-    box-shadow: -0.4rem 0.4rem rgba(72, 71, 71, 0.1);
-}
-
-.project_preview.active {
-    height:auto;
 }
 
 .hide {
-    opacity: 0;
-    transition: 0.4s ease-in;
-    display: flex;
     justify-content: space-around;
     flex-direction: column;
+    transition: all 0.4s ease-in;
+    overflow: hidden;
+    height: 0;
+    animation: slide-out 0.3s;
+}
+
+@keyframes slide-in {
+    0% {
+        height: 0;
+    }
+    50% {
+        height: 16rem;
+    }
+    100% {
+        height: auto;
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        height: auto;
+    }
+    50% {
+        height: 16rem;
+    }
+    100% {
+        height: 0;
+    }
 }
 
 .hide.active {
-    opacity: 1;
+    animation: slide 1s ease-in;
+    height: auto;
 }
+
+
+
 
 .gitLink {
     font-weight: 700;
@@ -317,9 +336,7 @@ footer {
 
     main {
         margin: 2rem 2rem;
-    }
-
-    #hamburger_menu {
+    }  hamburger_menu {
         display: block;
         cursor: pointer;
     }

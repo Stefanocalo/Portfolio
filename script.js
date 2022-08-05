@@ -61,11 +61,11 @@ age.innerHTML = currentAge
 const hidden = document.querySelector('.hide');
 const plantleaf = document.querySelector('#plantleaf');
 const arrow = document.querySelector('.arrow');
-const preview = document.querySelector('.project_preview');
+//const preview = document.querySelector('.project_preview');
 
 plantleaf.addEventListener('click', () => {
     hidden.classList.toggle('active');
     arrow.classList.toggle('active');
-    preview.classList.toggle('active');
+    //preview.classList.toggle('active');
 })
 
