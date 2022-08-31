@@ -287,6 +287,8 @@ i:active {
     height: auto;
 }
 
+/* Night mode toggle
+
 #nightMode {
     color: rgb(255,255,255);
 }
@@ -295,6 +297,7 @@ i:active {
     transform: rotate(180deg);
 }
 
+ */
 
 .gitLink {
     font-weight: 700;

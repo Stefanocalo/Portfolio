@@ -69,16 +69,5 @@ plantleaf.addEventListener('click', () => {
     //preview.classList.toggle('active');
 })
 
-// Night Mode
 
-const toggle = document.getElementById('nightMode');
-
-toggle.addEventListener('click', () => {
-    toggle.classList.toggle('active');
-    document.body.style.backgroundColor = 'rgb(30,29,29)';
-    document.body.style.color = 'rgb(255,255,255)';
-    document.querySelector('#navbar').style.backgroundColor = 'rgb(10,24,59)'
-    document.querySelector('footer').style.backgroundColor = 'rgb(10,24,59)';
-    document.querySelector('.language_container').style.color = 'rgb(255,255,255)'
-})
 
