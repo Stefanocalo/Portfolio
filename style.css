@@ -266,6 +266,10 @@ i:active {
     animation: slide-out 0.3s;
 }
 
+#mode_toggle {
+    cursor: pointer;
+}
+
 @keyframes slide-in {
     0% {
         height: 0;
@@ -278,24 +282,18 @@ i:active {
     }
 }
 
-@keyframes slide-out {
-    0% {
-        height: auto;
-    }
-    50% {
-        height: 16rem;
-    }
-    100% {
-        height: 0;
-    }
-}
-
 .hide.active {
     animation: slide 1s ease-in;
     height: auto;
 }
 
+#nightMode {
+    color: rgb(255,255,255);
+}
 
+#nightMode.active {
+    transform: rotate(180deg);
+}
 
 
 .gitLink {
