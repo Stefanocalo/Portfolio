@@ -258,6 +258,10 @@ i:active {
     height: auto;
 }
 
+.fa-solid {
+    cursor: pointer;
+}
+
 @keyframes slide-in {
     0% {
         height: 0;
