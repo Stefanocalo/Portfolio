@@ -263,7 +263,10 @@ i:active {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e9059910293d9e65005b4c12796fcf08720471b
 @keyframes slide-in {
     0% {
         height: 0;
