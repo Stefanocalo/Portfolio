@@ -230,7 +230,7 @@ i:active {
     font-size: 1.3rem;
 }
 
-#plantleaf.active {
+#plantleafArrow.active {
     transform: rotate(180deg);
 }
 
@@ -246,11 +246,14 @@ i:active {
     justify-content: space-around;
     flex-direction: column;
     overflow: hidden;
-    height: 0;
     animation: slide-out 0.5s ;
 }
 
-.hide.active {
+#plantleaf {
+    height: 0;
+}
+
+#plantleaf.active {
     animation: slide-in 1s ease-in;
     height: auto;
 }
