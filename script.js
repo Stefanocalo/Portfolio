@@ -62,18 +62,11 @@ age.innerHTML = currentAge
 // Plantleaf
 
 const plantHidden = document.querySelector('#plantleaf');
-const plantleaf = document.querySelector('#plantleafArrow');
+const plantleafArrow = document.querySelector('#plantleafArrow');
 //const preview = document.querySelector('.project_preview');
 
-plantleaf.addEventListener('click', () => {
+plantleafArrow.addEventListener('click', () => {
     plantHidden.classList.toggle('active');
-    plantleaf.classList.toggle('active');
+    plantleafArrow.classList.toggle('active');
     //preview.classList.toggle('active');
 })
-
-
-// test 
-
-
-
-

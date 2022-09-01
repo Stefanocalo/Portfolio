@@ -230,10 +230,6 @@ i:active {
     font-size: 1.3rem;
 }
 
-#plantleafArrow.active {
-    transform: rotate(180deg);
-}
-
 .project_preview {
     width: 100%;
     height: auto;
@@ -253,10 +249,20 @@ i:active {
     height: 0;
 }
 
+#plantleafArrow.active {
+    transform: rotate(180deg);
+}
+
+
 #plantleaf.active {
     animation: slide-in 1s ease-in;
     height: auto;
 }
+
+.fa-solid {
+    cursor: pointer;
+}
+
 
 @keyframes slide-in {
     0% {
