@@ -61,12 +61,24 @@ age.innerHTML = currentAge
 
 // Plantleaf
 
-const plantHidden = document.querySelector('#plantleaf');
-const plantleafArrow = document.querySelector('#plantleafArrow');
-//const preview = document.querySelector('.project_preview');
+const plantHidden = document.getElementById('plantleaf');
+const plantleafArrow = document.getElementById('plantleafArrow');
 
-plantleafArrow.addEventListener('click', () => {
+// Knights Game
+
+const knightsHidden = document.getElementById('knightBattle');
+const knightsArrow = document.getElementsByName('knightsArrow');
+
+
+function expand(var1, var2) {
+    var1.classList.toggle('active');
+    var2.classList.toggle('active');
+}
+
+plantleafArrow.onclick = function() {expand(plantHidden, plantleafArrow)};
+
+//plantleafArrow.addEventListener('click', () => {
     plantHidden.classList.toggle('active');
     plantleafArrow.classList.toggle('active');
     //preview.classList.toggle('active');
-})
+//})
