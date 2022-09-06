@@ -67,7 +67,7 @@ const plantleafArrow = document.getElementById('plantleafArrow');
 // Knights Game
 
 const knightsHidden = document.getElementById('knightBattle');
-const knightsArrow = document.getElementsByName('knightsArrow');
+const knightsArrow = document.getElementById('knightBattleArrow');
 
 
 function expand(var1, var2) {
@@ -76,9 +76,5 @@ function expand(var1, var2) {
 }
 
 plantleafArrow.onclick = function() {expand(plantHidden, plantleafArrow)};
+knightsArrow.onclick = function() {expand(knightsHidden, knightsArrow)};
 
-//plantleafArrow.addEventListener('click', () => {
-    plantHidden.classList.toggle('active');
-    plantleafArrow.classList.toggle('active');
-    //preview.classList.toggle('active');
-//})

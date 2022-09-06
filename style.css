@@ -223,11 +223,13 @@ i:active {
 
 .expand {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .project_title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1rem 0;
 }
 
 .project_preview {
@@ -243,6 +245,7 @@ i:active {
     flex-direction: column;
     overflow: hidden;
     animation: slide-out 0.5s ;
+    border-bottom: 1px solid rgba(3, 3, 3, 0.49);
 }
 
 #plantleaf {
@@ -259,9 +262,34 @@ i:active {
     height: auto;
 }
 
+#knightBattle {
+    height: 0;
+}
+
+#knightBattleArrow.active {
+    transform: rotate(180deg);
+}
+
+
+#knightBattle.active {
+    animation: slide-in 1s ease-in;
+    height: auto;
+} 
+
+#plantleafArrow.active {
+    transform: rotate(180deg);
+}
+
+
+#plantleaf.active {
+    animation: slide-in 1s ease-in;
+    height: auto;
+}
+
 .fa-solid {
     cursor: pointer;
 }
+
 
 @keyframes slide-in {
     0% {
